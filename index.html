@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NexaChat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="logo">N</div>
+      <div>
+        <h1>NexaChat</h1>
+        <span id="status">conectando...</span>
+      </div>
+      <div class="dot" id="dot"></div>
+    </header>
+
+    <section class="welcome" id="welcome">
+      <div class="big-logo">N</div>
+      <h2>Bem-vindo ao NexaChat</h2>
+      <p>Mensagens em tempo real, simples e rápidas.</p>
+    </section>
+
+    <section class="messages" id="messages"></section>
+
+    <form class="composer" id="form">
+      <input id="input" autocomplete="off" maxlength="1000" placeholder="Digite uma mensagem...">
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
